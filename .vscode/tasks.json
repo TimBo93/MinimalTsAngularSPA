@@ -1,0 +1,51 @@
+{
+	"version": "0.1.0",
+	"command": "${workspaceRoot}/node_modules/.bin/webpack",
+	"isShellCommand": true,
+	"args": [
+		"--display-modules",
+		"--progress"
+	],
+    "isWatching": false,
+	"echoCommand": true,
+	"tasks": [
+		{
+			"args": [
+				"-d"
+			],
+			"suppressTaskName": true,
+			"taskName": "webpack dev",
+			"isBuildCommand": true,
+            "problemMatcher": {
+                    "owner": "webpack",
+                    "applyTo": "allDocuments",
+                    "fileLocation": "absolute",
+                    "pattern": [
+                        {
+                        "regexp": "(ERROR|WARNING) in \\[default\\] (.*):(.*):(.*)",
+                        "severity": 1,
+                        "file": 2,
+                        "line":3,
+                        "column": 4
+                        },
+                        {
+                            "regexp": "(.*)",
+                            "message": 1
+                        }
+                        ], "watching": {
+                            "activeOnStart": false,
+                            "beginsPattern": "webpack:(.*)INVALID.",
+                            "endsPattern": "webpack:(.*)VALID."
+                        }
+            }
+		},
+		{
+			"args": [
+				"-p"
+			],
+			"suppressTaskName": true,
+			"taskName": "webpack dist",
+			"isBuildCommand": false
+		}
+	]
+}

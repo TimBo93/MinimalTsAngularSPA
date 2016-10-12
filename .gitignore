@@ -1,0 +1,13 @@
+node_modules
+typings
+wwwroot
+bower
+build
+
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.csproj.user
+*.sln.docstates

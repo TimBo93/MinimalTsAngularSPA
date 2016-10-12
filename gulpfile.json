@@ -1,0 +1,36 @@
+{
+    "allFiles": "/*",
+    "filterTs": "*/*.ts",
+    "filterJson": "*/*.json",
+    "filterHtml": "*/*.html",
+    "filterScss": "*/*.scss",
+    "filterCss": "*/*.css",
+    "filterJs": "*/*.js",
+    "filterAll": "*",
+
+    "build": "./wwwroot",
+    "sourceRoot": "./app",
+
+    "destBuild": "./wwwroot/build",
+
+    "sourceLocalisation": "./app/Localisation",
+    "destLocalisation": "./wwwroot/localisation/",
+
+    "sourceAssets": "./app/Assets",
+    "destAssets": "./wwwroot/assets/",
+
+    "bowerBase": "./bower",
+    "destBower": "./wwwroot/bower",
+
+    "sourceViews": "./app/Views",
+    "destViews": "./wwwroot",
+
+    "sourceStyles": "./app/Styles",
+    "destStyles": "./wwwroot/styles",
+
+    "sourceSites": "./app/Views/views/siteContent",
+    "destSites": "./wwwroot/views/siteContent",
+
+    "sourceDirectives": "./app/Views/views/directives",
+    "destDirectives": "./wwwroot/views/directives"
+}

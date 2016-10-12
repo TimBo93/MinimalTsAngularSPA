@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es3", // Juni 2015
+    "declaration": true,
+    "rootDir": "./app",
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "typeRoots": [
+        "typings",
+        "app/CustomTypings"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "bower",
+    "gulp-tasks",
+    "wwwroot"
+  ]
+}

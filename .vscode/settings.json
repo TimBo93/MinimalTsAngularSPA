@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"files.exclude": {
+		"**/.git": true,
+		"node_modules/**":true,
+		"bower/**":true,
+		"typings/**":true,
+        "wwwroot/**": true
+	},
+
+     "typescript.tsdk": "node_modules/typescript/lib",
+
+	// The number of spaces a tab is equal to.
+	"editor.tabSize": 4,
+
+	// Insert spaces when pressing Tab.
+	"editor.insertSpaces": true,
+
+    // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+    "editor.detectIndentation": false,
+
+    // When enabled, will trim trailing whitespace when you save a file.
+	"files.trimTrailingWhitespace": true,
+
+    "genGetSet.pathStringDelimiter": "\"",
+    "genGetSet.spacedImportLine": true
+}

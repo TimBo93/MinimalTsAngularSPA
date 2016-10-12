@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "projekt-margay",
+  "private": true,
+  "author": {
+    "name": "Tim Borowski",
+    "email": "tim.borowski@datron.de",
+    "url": "https://www.datron.de/"
+  },
+  "readme": "Dependencies for developing and building Projekt Margay. One should not check nor ship node_modules folder.",
+  "devDependencies": {
+    "awesome-typescript-loader": "^2.2.4",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-bower": "^0.0.13",
+    "gulp-inject": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-task-loader": "^1.4.4",
+    "gulp-tslint": "^6.1.2",
+    "gulp-typings": "^2.0.4",
+    "gulp-util": "^3.0.7",
+    "main-bower-files": "^2.13.1",
+    "run-sequence": "^1.2.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "vinyl-paths": "^2.1.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-stream": "^3.2.0"
+  }
+}
