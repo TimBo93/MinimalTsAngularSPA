@@ -1,4 +1,5 @@
 import { SampleViewModel } from "../ViewModels/SampleViewModel";
+import { BusinessModel } from "../ViewModels/BusinessModel";
 
 class AngularModule {
     private app: ng.IModule;
@@ -6,6 +7,7 @@ class AngularModule {
     constructor(name: string, modules: Array<string>) {
         this.app = angular.module(name, modules);
         this.bootstrapViewModels();
+        this.app.service("BusinessModel", BusinessModel);
     }
 
 

@@ -1,13 +1,19 @@
+import { BusinessModel } from "./BusinessModel";
+
+
 export class SampleViewModel {
+    public static $inject = ["BusinessModel"];
     public count: number = 0;
 
-    constructor() {
-        this.count = 1337;
+    private readonly bm: BusinessModel;
+
+    constructor(bm: BusinessModel) {
+        this.bm = bm;
+        this.count = bm.getData();
     }
 
     public click(): void {
-        ++this.count;
-        console.log("sample 123");
-        debugger;
+       this.bm.update();
+       this.count = this.bm.getData();
     }
 }
